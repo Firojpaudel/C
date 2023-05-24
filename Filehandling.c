@@ -29,7 +29,10 @@ int main(){
     fp = fopen("Test.txt","r");
 
     // Reads the data from the file
+    while (fp!= EOF)
+    {
     fscanf(fp,"%s\n %d\n %f\n",name,&marks,&per);
+    }
 
     // Prints the data in file to the user
     printf("Name = %s\n Marks = %d\n Percentage = %f\n",name,marks,per);
